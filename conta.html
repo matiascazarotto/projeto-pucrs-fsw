@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Pet Shop</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="arq/logo-petshop.png" alt="Pet Shop">
+            </a>
+        </div>
+        <div id="buscar">
+            <input type="text" id="input-buscar" placeholder="Buscar...">
+        </div>
+        <div id="botoes-header">
+            <a href="login.html" id="minha-conta">Minha Conta</a>
+            <a href="index.html" id="link-sair-conta">Sair</a>
+        </div>
+    </header>
+    <nav id="menu">
+        <a href="index.html" id="link-produtos">Produtos</a>
+        <a href="index.html" id="link-servicos">Serviços</a>
+    </nav>
+
+    <!-- Informações da conta -->
+    <div class="container-minhaconta">
+        <div class="container-minhaconta-esquerdo">
+            <section id="user-info">
+                <h2>Informações do Usuário</h2>
+                <p><strong>Nome:</strong> <span id="user-name"></span></p>
+                <p><strong>Email:</strong> <span id="user-email"></span></p>
+            </section>
+              <!-- Lista dos Pets -->
+            <div id="lista-pets">
+                <h2>Meus Pets</h2>
+                <ul class="lista-pets-ul"></ul>
+                <p id="sem-pets-msg">Você ainda não tem um pet cadastrado.</p>
+            </div>
+        </div>
+          <!-- Formulário de cadastro dos Pets -->
+        <div id="cadastro-pet" class="container-minhaconta-direito">
+            <h2>Cadastrar Pet</h2>
+            <form id="pet-form">
+                <label for="pet-nome">Nome</label>
+                <input type="text" id="pet-nome" class="custom-input" placeholder="Nome do Pet" required>
+                <label for="pet-tipo">Tipo</label>
+                <select id="pet-tipo" class="custom-input">
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                </select>
+                <label for="pet-raca">Raça</label>
+                <input type="text" id="pet-raca" class="custom-input" placeholder="Raça do Pet" required>
+                <label for="pet-temperamento">Temperamento</label>
+                <select id="pet-temperamento" class="custom-input">
+                    <option value="amigavel">Amigável</option>
+                    <option value="brincalhao">Brincalhão</option>
+                    <option value="calmo">Calmo</option>
+                    <option value="timido">Tímido</option>
+                    <option value="agressivo">Agressivo</option>
+                </select>
+                <button type="submit" class="custom-button">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container-footer">
+            <div>
+                <h3>Endereço</h3>
+                <p>Rua do Comércio, nº 123</p>
+                <p>Centro, Rodeio Bonito - RS</p>
+                <p>98360-000</p>
+            </div>
+            <div>
+                <h3>Redes Sociais</h3>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="arq/icone-facebook.png" alt="Facebook" width="80" height="80">
+                </a>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <img src="arq/icone-twitter.png" alt="Twitter" width="80" height="80">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="arq/icone-instagram.png" alt="Instagram" width="80" height="80">
+                </a>
+            </div>
+        </div class="container-footer">
+        <p>Desenvolvido por Matias Cazarotto</p>
+    </footer>
+    <script src="header.js"></script>
+    <script src="conta.js"></script>
+</body>
+</html>

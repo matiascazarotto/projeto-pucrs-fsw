@@ -1,0 +1,378 @@
+body {
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+}
+
+header {
+    background-color: #EBEBEB;
+    color: #ebebeb;
+    height: 120px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    flex: 1;
+    text-align: center;
+
+}
+
+#logo img {
+    max-width: 80%;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+}
+
+#buscar {
+    flex: 2;
+    text-align: left;
+}
+
+#input-buscar {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    max-width: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#botoes-header {
+    flex: 1;
+    text-align: right;
+    max-width: fit-content;
+    max-height: fit-content;
+    text-align: center;
+    font-size: 14px;
+}
+
+#botoes-header a {
+    background-color: #C1C1C1;
+    color: #000000;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    max-height: 35px;
+}
+
+#botoes-header a:hover {
+    background-color: #a1a1a1;
+}
+
+#menu {
+    background-color: #c1c1c1;
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#menu a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    width: 1000px;
+}
+
+#menu a.ativo {
+    color: #ffffff;
+}
+
+.container.escondido {
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.form-left {
+    padding: 40px;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    max-width: 400px;
+}
+
+
+.form-right {
+    padding: 40px;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    max-width: 400px;
+}
+
+.custom-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #C1C1C1;
+    margin-top: 5px;
+}
+
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.custom-button {
+    padding: 15px 10px;
+    background-color: #C1C1C1;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 200px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.custom-button:hover {
+    background-color: #999999;
+}
+
+#footer {
+    background-color: #C1C1C1;
+    text-align: center;
+    padding: 5px;
+    margin-top: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#footer p {
+    font-weight: bold;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.container-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produto {
+    width: 300px;
+    margin: 20px 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+    height: 400px;
+}
+
+.product-image {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.descricaoProduto {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.precoProduto {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.custom-button {
+    background-color: #C1C1C1;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.custom-button:hover {
+    background-color: #999999;
+}
+
+
+
+.tipoanimal {
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e1e1e1;
+    border-radius: 20px;
+    padding: 5px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.component .preco {
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ff0000;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.component .ellipse {
+    width: 21px;
+    height: 21px;
+    background-color: #000000;
+    border-radius: 10.5px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.component .descricaoServico {
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.component .informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    align-items: start
+}
+
+.container-minhaconta {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container-minhaconta-esquerdo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    max-width: 400px;
+}
+
+
+.container-minhaconta-direito {
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    max-width: 400px;
+}
+
+.lista-pets-ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-pets-ul li {
+    background-color: #F0F0F0;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.lista-pets-ul li span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.lista-pets-ul li .nome {
+    color: #000000bd;
+}
+
+.lista-pets-ul li .tipo {
+    color: #007bff9a;
+}
+
+.lista-pets-ul li .raca {
+    color: #FF5733;
+}
+
+.lista-pets-ul li .temperamento {
+    color: #6b25dda2;
+}
+
+.container-agendamento {
+    margin-bottom: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.container-agendamento h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.custom-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.tele-busca {
+    display: flex;
+    align-items: center;
+}
+
+
+.tele-busca input[type="checkbox"] {
+    margin-right: 10px;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tele-busca input[type="checkbox"]:checked {
+    background-color: #333;
+}
+
+.botao-agendar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="arq/logo-petshop.png" alt="Pet Shop">
+            </a>
+        </div>
+        <div id="buscar">
+            <input type="text" id="input-buscar" placeholder="Buscar...">
+        </div>
+        <div id="botoes-header">
+            <a href="login.html" id="minha-conta">Minha Conta</a>
+        </div>
+    </header>
+    <nav id="menu">
+        <a href="index.html" id="link-produtos">Produtos</a>
+        <a href="index.html" id="link-servicos">Serviços</a>
+    </nav>
+    <!-- Formulário de login -->
+    <div class="container">
+        <div class="form-left">
+            <h2>Login</h2>
+            <form>
+                <input type="email" id="email" class="custom-input" placeholder="E-mail" required>
+                <input type="password" id="senha" class="custom-input" placeholder="Senha" required>
+                <button type="submit" class="custom-button">Entrar</button>
+            </form>
+        </div>
+        <!-- Botão para se cadastrar -->
+        <div class="form-right">
+            <h2>Não tem conta?</h2>
+            <a  href="cadastro.html"><button class="custom-button">Cadastrar-se</button></a>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container-footer">
+        <div>
+            <h3>Endereço</h3>
+            <p>Rua do Comércio, nº 123</p>
+            <p>Centro, Rodeio Bonito - RS</p>
+            <p>98360-000</p>
+        </div>
+        <div>
+            <h3>Redes Sociais</h3>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="arq/icone-facebook.png" alt="Facebook" width="80" height="80">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="arq/icone-twitter.png" alt="Twitter" width="80" height="80">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="arq/icone-instagram.png" alt="Instagram" width="80" height="80">
+            </a>
+        </div>
+    </div class="container-footer">
+        <p>Desenvolvido por Matias Cazarotto</p>
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html>
